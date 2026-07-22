@@ -68,11 +68,18 @@ LightPacket/
 
 **Linux:**
 ```bash
-sudo apt-get install libpcap-dev  # Debian/Ubuntu
-sudo yum install libpcap-devel    # RHEL/CentOS
+sudo apt-get install libpcap-dev    # Debian/Ubuntu
+sudo dnf install libpcap-devel      # RHEL/CentOS/Fedora
+sudo pacman -S libpcap              # Arch
+sudo zypper install libpcap1        # OpenSUSE/SUSE
+sudo apk add libpcap-dev            # Alpine
+sudo emerge net-libs/libpcap        # Gentoo
+sudo xbps-install -S libpcap-devel  # Void
+sudo tce-load -wi libpcap           # Tiny Core  
 ```
 
 **Windows:**
+- Windows 10 / Windows 11
 - Install [Npcap](https://npcap.com/) (run in WinPcap API-compatible mode)
 - Ensure Python 3.8+ is installed
 
